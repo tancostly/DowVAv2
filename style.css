@@ -6,13 +6,20 @@
   background-color: #f2f4f9;
 }
 
-body.fullscreen {
-  overflow: hidden;
+#fullscreen-btn{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 10vh;
+  top: 50%;
+  left: 25%;
 }
 
 .header {
   padding: 5vh 3vw 0 3vw;
-  display: flex;
+  display: none;
   align-items: center;
   background-color: #f2f4f9;
   height: 10vh;
@@ -71,7 +78,7 @@ body.fullscreen {
 .main-document {
   margin-top: 10vh; /* Add margin to account for the fixed header */
   margin-bottom: 10vh; /* Add margin to account for the fixed footer */
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -382,7 +389,7 @@ body.fullscreen {
 }
 
 footer{
-  display: flex;
+  display: none;
   background-color: #f2f4f9;
   height: 10vh;
   position: fixed;

@@ -68,20 +68,24 @@ function setData(data) {
         }
     }
 }
-/* Get the element you want displayed in fullscreen */ 
-var elem = document.getElementsByTagName('html')[0];
+document.getElementById('fullscreen-btn').addEventListener('click', function() {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(err => {
+            console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
+    const main_document = document.getElementById('main-document');
+    const full_screen_btn = document.getElementById('fullscreen-btn');
+    header.style.display = 'flex';
+    footer.style.display = 'flex';
+    main_document.style.display = 'flex';
+    full_screen_btn.style.display = 'none';
+    } else {
+        console.error('Fullscreen API is not supported.');
+    }
+});
 
-/* Function to open fullscreen mode */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-openFullscreen();
 setData(data);
 
 document.querySelector('.extra-personal-data').addEventListener('click', function() {
@@ -101,24 +105,5 @@ document.querySelector('.extra-personal-data').addEventListener('click', functio
         header.style.height = '8vh';  
         header.style.marginBottom = '0';
         console.log('Content shown, border bottom radius set to none');
-    }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    function requestFullScreen(element) {
-        if (element.requestFullscreen) {
-            element.requestFullscreen();
-        } else if (element.mozRequestFullScreen) { // Firefox
-            element.mozRequestFullScreen();
-        } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
-            element.webkitRequestFullscreen();
-        } else if (element.msRequestFullscreen) { // IE/Edge
-            element.msRequestFullscreen();
-        }
-    }
-
-    // Sprawdź, czy urządzenie jest mobilne
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-        requestFullScreen(document.documentElement);
     }
 });
