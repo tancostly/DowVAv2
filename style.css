@@ -21,6 +21,7 @@
 }
 
 .header-wrapper {
+  margin-bottom: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,8 +97,9 @@
   position: absolute;
   top: 4%;
   left: 9%;
-  width: 31%; /* Adjust size as needed */
-  height: 38%;
+  width: 33%; /* Adjust size as needed */
+  height: 40%;
+  /* border: 1px solid #000; */
 }
 
 .main-photo-img {
