@@ -9,11 +9,11 @@
 
 
 .header {
-  padding: 5vh 3vw 0 3vw;
+  padding: 5vh 3vw 2vh 3vw;
   display: flex;
   align-items: center;
   background-color: #f2f4f9;
-  height: 10vh;
+  height: 2%;
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,8 +96,8 @@
   position: absolute;
   top: 4%;
   left: 9%;
-  width: 31vw; /* Adjust size as needed */
-  height: 18.2vh;
+  width: 31%; /* Adjust size as needed */
+  height: 38%;
 }
 
 .main-photo-img {
@@ -382,7 +382,7 @@
 footer{
   display: flex;
   background-color: #f2f4f9;
-  height: 10vh;
+  height: 10%;
   position: fixed;
   bottom: 0;
   width: 100%;
