@@ -101,7 +101,6 @@ body.fullscreen {
   left: 8%;
   width: 33%; /* Adjust size as needed */
   height: 40%;
-  border: 1px solid #000;
 }
 
 .main-photo-img {
@@ -421,4 +420,7 @@ footer{
   font-size: 8pt;
   color: #515760;
   margin-top: 0.7vh;
+}
+#fullscreen-btn {
+  display: none;
 }

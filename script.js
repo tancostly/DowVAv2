@@ -23,7 +23,7 @@ updateClock();
 
 const data = {
   name: "Antoni",
-  surname: "Smagaa",
+  surname: "Smaga",
   nationality: "Polskie",
   birth: "14.01.2006",
   pesel: "06211406832",
@@ -109,6 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Sprawdź, czy urządzenie jest mobilne
-  requestFullScreen(document.documentElement);
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+  fullscreenBtn.addEventListener('click', () => {
+    requestFullScreen(document.documentElement);
+  });
+
+  // Opcjonalnie: automatycznie kliknij przycisk na urządzeniach mobilnych
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    fullscreenBtn.click();
+  }
 });
