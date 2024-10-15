@@ -70,7 +70,7 @@ body.fullscreen {
 }
 
 .main-document {
-  margin-top: 10vh; /* Add margin to account for the fixed header */
+  margin-top: 7vh; /* Add margin to account for the fixed header */
   margin-bottom: 10vh; /* Add margin to account for the fixed footer */
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ body.fullscreen {
 
 .clock {
   margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
   font-size: 9pt;
   color: #555;
   text-align: center;
