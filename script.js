@@ -68,23 +68,6 @@ function setData(data) {
         }
     }
 }
-document.getElementById('fullscreen-btn').addEventListener('click', function() {
-    if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen().catch(err => {
-            console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-        });
-    const header = document.getElementById('header');
-    const footer = document.getElementById('footer');
-    const main_document = document.getElementById('main-document');
-    const full_screen_btn = document.getElementById('fullscreen-btn');
-    header.style.display = 'flex';
-    footer.style.display = 'flex';
-    main_document.style.display = 'flex';
-    full_screen_btn.style.display = 'none';
-    } else {
-        console.error('Fullscreen API is not supported.');
-    }
-});
 
 setData(data);
 

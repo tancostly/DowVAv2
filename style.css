@@ -6,23 +6,14 @@
   background-color: #f2f4f9;
 }
 
-#fullscreen-btn{
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 10vh;
-  top: 50%;
-  left: 25%;
-}
+
 
 .header {
   padding: 5vh 3vw 0 3vw;
-  display: none;
+  display: flex;
   align-items: center;
   background-color: #f2f4f9;
-  height: 5vh;
+  height: 10vh;
   position: fixed;
   top: 0;
   width: 100%;
@@ -78,7 +69,7 @@
 .main-document {
   margin-top: 10vh; /* Add margin to account for the fixed header */
   margin-bottom: 10vh; /* Add margin to account for the fixed footer */
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -389,7 +380,7 @@
 }
 
 footer{
-  display: none;
+  display: flex;
   background-color: #f2f4f9;
   height: 10vh;
   position: fixed;
