@@ -1,3 +1,18 @@
+const data = {
+  name: "Antoni",
+  surname: "Paleta",
+  nationality: "Polskie",
+  birth: "14.01.2006",
+  pesel: "06211406832",
+  family_name: "Smaga",
+  gender: "Mężczyzna",
+  family_name_father: "Smaga",
+  family_name_mother: "Skórska",
+  birth_place: "Lublin",
+  address: "Łopiennik 92 <br>24-224, Łopiennik",
+  date_of_registration: "02.07.2013",
+};
+
 function updateClock() {
   const now = new Date();
   const hours = String(now.getHours()).padStart(2, "0");
@@ -21,20 +36,6 @@ setInterval(updateClock, 1000);
 // Inicjalizuj zegar po załadowaniu strony
 updateClock();
 
-const data = {
-  name: "Antoni",
-  surname: "Smaga",
-  nationality: "Polskie",
-  birth: "14.01.2006",
-  pesel: "06211406832",
-  family_name: "Smaga",
-  gender: "Mężczyzna",
-  family_name_father: "Smaga",
-  family_name_mother: "Skórska",
-  birth_place: "Lublin",
-  address: "Łopiennik 92 <br>24-224, Łopiennik",
-  date_of_registration: "02.07.2013",
-};
 
 function setData(data) {
   for (const key in data) {
