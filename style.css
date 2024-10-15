@@ -6,10 +6,12 @@
   background-color: #f2f4f9;
 }
 
-
+body.fullscreen {
+  overflow: hidden;
+}
 
 .header {
-  padding: 5vh 3vw 2vh 3vw;
+  padding: 5vh 3vw 1vh 3vw;
   display: flex;
   align-items: center;
   background-color: #f2f4f9;
@@ -96,10 +98,10 @@
   z-index: 1; /* Ensure it is above the flag */
   position: absolute;
   top: 4%;
-  left: 9%;
+  left: 8%;
   width: 33%; /* Adjust size as needed */
   height: 40%;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
 }
 
 .main-photo-img {
