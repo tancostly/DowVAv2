@@ -1,6 +1,6 @@
 const data = {
   name: "Antoni",
-  surname: "Paleta",
+  surname: "Smaga",
   nationality: "Polskie",
   birth: "14.01.2006",
   pesel: "06211406832",
