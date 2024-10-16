@@ -12,6 +12,15 @@ const data = {
   address: "Łopiennik 92 <br>24-224, Łopiennik",
   date_of_registration: "02.07.2013",
 };
+// Wyłączenie kontekstowego menu
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+}, false);
+
+// Wyłączenie przeciągania obrazów
+document.querySelectorAll("img").forEach(img => {
+  img.setAttribute("draggable", "false");
+});
 
 function updateClock() {
   const now = new Date();
